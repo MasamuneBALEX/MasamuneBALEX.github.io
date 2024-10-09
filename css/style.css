@@ -1,0 +1,369 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    padding-top: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    height: 50px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+    /* max-width: 1140px; */
+}
+
+.menu .menu_link {
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted #000;
+    padding-right: 28px;
+}
+
+.menu .menu_item:last-child {
+    border-right: none;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    font-weight: 100;
+    font-size: 13px;
+    /* line-height: 523%; */
+    color: #fff;
+    margin-top: 6px;
+}
+
+.subheader .subheader_call {
+    font-weight: 300;
+    font-size: 12px;
+    /* line-height: 117%; */
+    text-align: right;
+    color: #fff;
+    margin-top: 19px;
+}
+
+.subheader .subheader_number {
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    /* line-height: 309%; */
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.subheader .subheader_btn {
+    border-radius: 4px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.12);
+    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.21);
+    margin-top: 20px;
+}
+
+.promo {
+    min-height: 800px;
+    background: url(../img/uber_bg.jpg) center center / cover no-repeat;
+    padding: 150px 0 180px;
+}
+
+.promo .promo_header {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+}
+
+.promo .promo_subheader {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 22px 0 0;
+}
+
+.promo_descr {
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 133%; */
+    text-align: center;
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 116px auto 0;
+    border-radius: 4px;
+    border: none;
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.12);
+    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+
+    /* Text param */
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.advantage {
+    min-height: 768px;
+    /* background-color: #f2f2f2; */
+    padding: 18px 0 64px;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 113px;
+    height: 24px;
+    background-color: #000;
+    font-weight: 400;
+    font-size: 11px;
+    /* line-height: 100%; */
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.divider-white {
+    background-color: white;
+    color: #000;
+}
+
+.advantage .advantage_header {
+    font-weight: 700;
+    font-size: 38px;
+    /* line-height: 126%; */
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.advantage .advantage_block {
+    height: 100%;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    /*РЕШЕНИЕ ПРО ОТСТУПЫ */
+    /* row-gap: 16px; */
+    justify-content: space-between;
+}
+
+.advantage .advantage_item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.advantage .advantage_item_img {
+    display: flex;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: #1EACC7;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.advantage .advantage_item_text {
+    width: 370px;
+}
+
+.advantage .advantage_item_descr {
+    font-weight: 400;
+    font-size: 17px;
+    color: #1eacc7;
+    margin-bottom: 0;
+}
+
+.advantage .advantage_item_descr-info {
+    font-weight: 300;
+    font-size: 15px;
+    color: #202020;
+    margin-bottom: 0;
+}
+
+.mobile-app {
+    padding: 46px 0 80px;
+    background: url(../img/mobile_bg.jpg) center center / cover no-repeat;
+}
+
+.mobile-app .mobile-app_header {
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    margin-top: 42px;
+    margin-bottom: 0;
+}
+
+.mobile-app .mobile-app_subheader {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 124%;
+    text-align: center;
+    color: #222;
+    margin: 12px 0 0;
+}
+
+.mobile-app .mobile-app_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    row-gap: 18px;
+}
+
+.mobile-app .mobile-app_row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mobile-app .mobile-app_card {
+    width: 320px;
+    height: 280px;
+    position: relative;
+}
+
+
+.mobile-app .mobile-app_card img {
+    position: relative;
+}
+
+.mobile-app .mobile-app_card p {
+    position: absolute;
+    z-index: 2;
+    top: 88px;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.mobile-app .mobile-app_button {
+    display: block;
+    position: absolute;
+    left: 145px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000;
+    top: 217px;
+}
+
+.posibility {
+    position: relative;
+
+    /* ОГРАНИЧЕНА ВЫСОТА ДЛЯ ПРИДАНИЯ СТИЛЮ КАРТИНКЕ*/
+    height: 502px;
+    /* ОГРАНИЧЕНА ВЫСОТА ДЛЯ ПРИДАНИЯ СТИЛЮ КАРТИНКЕ*/
+
+    background-color: #070716;
+    padding-top: 54px;
+}
+
+.posibility .posibility_header {
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 36px 0 0;
+}
+
+.posibility .posibility_subheader {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    margin: 18px 0 0;
+}
+
+.posibility .posibility_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 54px;
+    width: 100%;
+}
+
+.posibility-2 {
+    background: url(../img/mobile_bg.jpg) center center / cover no-repeat;
+    padding: 214px 0 138px;
+    min-height: 390px;
+}
+
+.posibility-2 .posibility-2_header {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 141%;
+    text-align: center;
+    color: #222;
+}
+
+.empty-space {
+    min-height: 918px;
+}
+
+.world {
+    position: relative;
+    background-color: #080816;
+    background: url(../img/world_bg.png) center center / cover no-repeat;
+    min-height: 720px;
+}

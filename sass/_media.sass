@@ -1,0 +1,257 @@
+@media (min-width: 1400px)
+    .menu
+        &_item
+            padding-right: 38px
+        &_link
+            font-size: 18px
+
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 23px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 53px
+    .advantage
+        &_item
+            height: 150px
+            margin-top: 48px
+        &_item:first-child
+            margin-top: 0
+    .conditions_item
+        width: auto
+    .mobile-app
+        &_card
+            width: 100%
+    .footer_block
+        &_download-buttons
+            width: 196px
+            flex-wrap: wrap
+            row-gap: 10px
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 9px
+        &_link
+            font-size: 11px
+    .subheader_logo
+        > img
+            width: 100%
+    .subheader_official
+        font-size: 12px
+    .subheader_number
+        font-size: 18px
+    .mobile-app
+        &_card
+            height: 220px
+            p
+                font-size: 18px
+        &_card_plus
+            top: calc(100% / 1.3)
+    .advantage
+        &_header
+            font-size: 36px
+        &_item
+            min-height: 270px
+            flex-direction: column
+            row-gap: 10px
+            &_text
+                width: 100%
+                margin-left: 0
+        &_item:last-child
+            // min-height: 160px
+            // margin-bottom: 40px
+    .subheader_btn
+        width: 100%
+        height: 40px
+    .promo
+        &_header
+            font-size: 50px
+        &_subheader
+            font-size: 31px
+    .footer_block
+        &_download-buttons
+            width: 110px
+            flex-wrap: wrap
+            row-gap: 5px
+            a
+                width: 100%
+                border-radius: 5px
+    .posibility
+        &_img
+            // top: 260px
+            // width: 96%
+        &_header
+            font-size: 32px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 60%
+        height: 100%
+        flex-direction: column
+        background-color: rgba(0,0,0, 0.8)
+        padding: 20px 15px
+        justify-content: space-evenly
+        transition: 0.4s all
+        // align-items: center
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            align-items: center
+            width: 100%
+        &_link
+            display: block
+            font-size: 20px
+            padding: 40px 0
+            // margin-top: 10px
+            text-align: center
+        &_link:last-child
+            margin-top: 0
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            background-color: $text-color
+            margin-top: 2px
+            transition: 0.4s all
+        span:first-child
+            margin-top: 0
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .subheader
+        &_logo
+            margin-top: 24px
+        &_official
+            display: none
+        &_number
+            margin-top: 12px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 8px
+        .container > .row > div:nth-child(2)
+            display: none
+        .container > .row > div:nth-child(3)
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            > a
+                display: block
+    .promo
+        padding-bottom: 35px
+        min-height: 400px
+        &_descr
+            display: none
+    .advantage
+        padding-bottom: 0
+        &_item
+            height: auto
+            margin-top: 23px
+            row-gap: 25px
+        .container > .row
+            > div ~ div > .advantage_block
+                margin-top: 0
+    .mobile-app
+        padding-bottom: 43px
+        &_card
+            height: 280px
+            margin-top: 30px
+        &_card-first
+            margin-top: 0
+        &_card-block
+            &_row:last-child
+                margin-top: 0
+    .posibility
+        padding: 25px 0 31px
+        min-height: 393px
+        &_header
+            display: none
+        &_subheader
+            display: none
+        &_img
+            display: none
+        &_img-mobile
+            display: block
+            height: 190px
+            margin-top: 34px
+            // width: 100%
+            > img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &_another-side
+            display: none
+        &_text
+            display: block
+            color: $text-color
+            font-weight: 300
+            font-size: 17px
+            line-height: 141%
+            text-align: center
+            margin: 23px 0 0
+    .conditions
+        padding: 22px 0 30px
+        &_block:last-child
+            margin-top: 30px
+        &_subheader
+            margin-left: 0
+        &_list
+            margin: 10px 0 0
+        &_descr
+            column-gap: 10px
+        &_subheader-margin
+            margin-top: 30px
+    .world
+        min-height: 360px
+        padding: 24px 0 30px
+        &_link
+            margin-top: 211px
+    footer
+        padding: 24px 0 30px
+    .footer_divider
+        width: 255px
+    .footer_block
+        flex-direction: column
+        align-items: center
+        margin-top: 20px
+        .footer_links
+            &_site-map
+                flex-wrap: wrap
+                > a
+                    font-size: 14px
+            &_suggestion
+                flex-wrap: wrap
+        &_social-media
+            position: relative
+            left: 0
+            margin-top: 20px
+        &_download-buttons
+            position: relative
+            width: 260px
+            right: 0
+            margin-top: 20px
+            > a
+                width: calc( (100% / 3) - 5px )
